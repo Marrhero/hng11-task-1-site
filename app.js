@@ -12,8 +12,21 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 
 dayText.textContent = daysOfWeek[day];
 
+var hours = currentDate.getUTCHours();
+var minutes = currentDate.getUTCMinutes();
+var seconds = currentDate.getUTCSeconds();
+
+if (hours < 10)
+    hours = "0" + hours;
+
+if (minutes < 10)
+    minutes = "0" + minutes;
+
+if (seconds < 10)
+    seconds = "0" + seconds;
+
 //Set the time
-const currentTime = currentDate.getUTCHours() + ":" + currentDate.getUTCMinutes() + ":" + currentDate.getUTCSeconds();
+const currentTime = `${hours}:${minutes}:${seconds}`;
 timeText.textContent = currentTime;
 }
 
