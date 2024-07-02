@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474973;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
+  background-color: #0d0c1d;
+  color: #a69cac;
+
+  padding: 0 10%;
+  margin: 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0c1d;
+  color: #a69cac;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0 15px 15px 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.date-container > p {
+  margin: 4px 0;
+}
+
+.text-container {
+  padding: 10px 15px;
+  background-color: #f1dac4;
+  border-radius: 0 15px 15px 15px;
+  margin: 0 5%;
+  margin-top: 50px;
+
+  color: rgb(0, 0, 0);
+}
+
+header > p {
+  font-size: larger;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  padding: 0 5%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  margin: 80px auto;
+  padding: 0;
+}
+
+.body-container > img {
+  height: 450px;
+}
+
+.goal-list {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+a {
+  color: #0e59c9;
+}
+
+@media (max-width: 726px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-details {
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+}

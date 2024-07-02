@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HNG11 Internship Task 1</h1>
+
+        <div class="date-container">
+            <p>Today is <strong><span id="currentDay" data-testid="currentDay"> </span></strong></p>
+            <p>The time is <strong><span data-testid="currentTimeUTC" id="currentTime"></span> UTC</strong></p>
+        </div>
+    </header>
+
+    <div class="body-container">
+
+        <div class="profile-container">
+            <img class="profile" data-testid="slackProfilePicture" src="https://ca.slack-edge.com/T07466B189M-U079R9Q463Y-45f820f557cb-512" alt="">
+            <div class = profile-details>
+                <h1>Slack ID: <span data-testid="slackDisplayName">MarrHero</span> </h1>
+                <h2>Email: <span data-testid="slackEmail">marrsadiq@gmail.com</span></h2>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <h2>My Tech Journey in the Next Two Years </h2>
+            <p></p>
+
+            <div class="goal-list">
+                <ul>
+                    <li>Fully pivoted from my current career as a freelance illustrator into Tech.</li>
+                    <li>Working as a Front End or Full Stack Developer, creating challenging and interesting projects.</li>
+                    <li>Developing or launching the Unity 3D game project I've had in mind.</li>
+                    <li>As a <a href="http://hng.tech/learn" data-testid="hngLink">HNG Finalist!</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="text-container">
+                <p>SAW is a tool that allows you to scrape the entire web. I didn't make it, I just think it's really cool. You can check it out <a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">here.</a></a></p>
+            </div>
+
+            <div class="text-container">
+                <p>Keyword.dog is the quickest way to dominate search rankings. Don't believe me? It says so on the site. Take a look <a href="http://keyword.dog/" data-testid="">here.</a></p>
+            </div>
+        </div>
+
+        
+    
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
