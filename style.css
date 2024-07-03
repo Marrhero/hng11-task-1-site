@@ -202,7 +202,9 @@ a {
 
 @media (max-width: 768px) {
   .profile-container {
-    display: block;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .profile-details {
