@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* Fonts */
 .arsenal-sc-regular {
   font-family: "Arsenal SC", sans-serif;
   font-weight: 400;
@@ -33,6 +34,7 @@
   font-style: normal;
 }
 
+/* Body */
 body {
   background-color: #0d0c1d;
   max-width: 100%;
@@ -40,15 +42,7 @@ body {
   margin: 0;
 }
 
-h2 {
-  color: #a69cac;
-  margin: 0;
-  font-size: 32px;
-
-  text-align: center;
-  margin-top: 80px;
-}
-
+/* Header */
 header {
   display: flex;
   flex-direction: row;
@@ -73,17 +67,17 @@ h1 {
   padding: 0;
 }
 
-footer {
-  display: flex;
-  align-content: center;
+header > p {
+  font-size: larger;
+}
 
-  color: #0d0c1d;
-  background-color: #a69cac;
-
-  padding: 8px 1%;
+h2 {
+  color: #a69cac;
   margin: 0;
+  font-size: 32px;
 
-  font-size: 16px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 li {
@@ -91,6 +85,7 @@ li {
   padding: 0;
 }
 
+/* Profile Container */
 .profile-container {
   display: flex;
   flex-direction: row;
@@ -114,6 +109,7 @@ li {
   font-size: 24px;
 }
 
+/* Date Container */
 .date-container {
   display: flex;
   flex-direction: column;
@@ -125,6 +121,16 @@ li {
 .date-container > p {
   margin: 0;
   padding: 0;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .text-container {
@@ -141,20 +147,6 @@ li {
   color: rgb(0, 0, 0);
 }
 
-header > p {
-  font-size: larger;
-}
-
-.body-container {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-between;
-  padding: 0;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
 .goal-list {
   margin: 0 auto;
   width: 80%;
@@ -168,10 +160,25 @@ header > p {
   width: 60%;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  align-content: center;
+
+  color: #0d0c1d;
+  background-color: #a69cac;
+
+  padding: 8px 1%;
+  margin: 0;
+
+  font-size: 16px;
+}
+
 a {
   color: #0e59c9;
 }
 
+/* Tablet screens */
 @media (max-width: 992px) {
   .cards-container {
     flex-direction: column;
@@ -202,11 +209,14 @@ a {
   }
 }
 
+/*Mobile Screens*/
 @media (max-width: 768px) {
   .profile-container {
+    display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
   }
 
   .profile-details {
@@ -221,6 +231,10 @@ a {
   }
 
   .profile-container img {
-    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    width: 80%;
   }
 }
