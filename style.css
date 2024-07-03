@@ -44,6 +44,9 @@ h2 {
   color: #a69cac;
   margin: 0;
   font-size: 32px;
+
+  text-align: center;
+  margin-top: 80px;
 }
 
 header {
@@ -81,11 +84,6 @@ footer {
   margin: 0;
 
   font-size: 16px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 80px;
 }
 
 li {
