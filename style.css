@@ -150,7 +150,7 @@ header > p {
   flex-direction: column;
 
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -163,7 +163,9 @@ header > p {
 .cards-container {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   margin-bottom: 50px;
+  width: 60%;
 }
 
 a {
@@ -216,5 +218,9 @@ a {
     width: 400px;
 
     text-align: center;
+  }
+
+  .profile-container img {
+    margin-right: 0;
   }
 }
