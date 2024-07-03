@@ -34,7 +34,7 @@
 }
 
 body {
-  background-color: #474973;
+  background-color: #0d0c1d;
   max-width: 100%;
   padding: 0;
   margin: 0;
@@ -46,21 +46,25 @@ header {
   justify-content: space-between;
   align-content: center;
 
-  background-color: #0d0c1d;
-  color: #a69cac;
+  background-color: #a69cac;
+  color: #0d0c1d;
 
-  padding: 0 10%;
+  padding: 0 3%;
   margin: 0;
 
   font-size: 18px;
+}
+
+h1 {
+  padding: 0;
 }
 
 footer {
   display: flex;
   align-content: center;
 
-  background-color: #0d0c1d;
-  color: #a69cac;
+  color: #0d0c1d;
+  background-color: #a69cac;
 
   padding: 10px 2%;
   margin: 0;
@@ -72,17 +76,28 @@ h2 {
   text-align: center;
 }
 
-.profile-details {
+.profile-container {
   display: flex;
-  flex-direction: column;
-  background-color: #0d0c1d;
-  color: #a69cac;
+  flex-direction: row;
+  overflow: hidden; /* To contain floated elements */
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  padding: 0;
+}
+
+.profile-container img {
+  margin-right: 15px; /* Adjust as needed for spacing */
+}
+
+.profile-details {
+  color: #0d0c1d;
+  background-color: #a69cac;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 0 15px 15px 0;
-  margin: 0;
-  margin-left: 15px;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .date-container {
@@ -122,16 +137,6 @@ header > p {
   margin-bottom: 50px;
 }
 
-.profile-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding: 0;
-}
-
 .body-container > img {
   height: 450px;
 }
@@ -152,16 +157,6 @@ a {
 }
 
 @media (max-width: 992px) {
-  .profile-container {
-    flex-direction: column;
-  }
-
-  .profile-details {
-    border-radius: 0 0 15px 15px;
-    margin: 0;
-    margin-top: 15px;
-  }
-
   .cards-container {
     flex-direction: column;
   }
@@ -172,6 +167,7 @@ a {
 
   footer {
     font-size: 12px;
+    margin-top: -25px;
   }
 
   .text-container {
@@ -184,5 +180,22 @@ a {
 
   .date-container {
     width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    display: block;
+  }
+
+  .profile-details {
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+
+    width: 400px;
+
+    text-align: center;
   }
 }
